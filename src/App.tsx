@@ -23,7 +23,9 @@ function App() {
       {/* Header */}
       <header className="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <div className="text-base font-semibold tracking-tight">Kim Seonyeong</div>
+          <a href="#hero" className="text-base font-semibold tracking-tight hover:text-sky-400">
+            Kim Seonyeong
+          </a>{" "}
           <nav className="flex flex-wrap gap-3 text-xs text-slate-300">
             <a href="#about" className="hover:text-white">
               About
@@ -50,43 +52,47 @@ function App() {
       <main className="mx-auto max-w-5xl px-4 pb-20">
         {/* Hero */}
         <section id="hero" className="pt-12 pb-16">
-          <p className="text-xs uppercase tracking-[0.2em] text-sky-400">Frontend Engineer · iOS Developer</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-sky-400">Web Frontend & iOS Developer</p>
           <h1 className="mt-3 text-4xl font-semibold leading-tight">
             변화를 두려워하지 않는 개발자 <span className="text-sky-400">김선영</span>입니다.
           </h1>
           <p className="mt-4 text-sm text-slate-300 leading-relaxed">
-            정육각에서 약 2년 8개월 동안 커머스 웹과 관리자 시스템을 개발하며 비즈니스 핵심 도메인을 폭넓게
-            경험했습니다. React·Vue·SvelteKit 기반 SPA 개발부터 Node.js·Firebase·CosmosDB 연동, Azure AD(MSAL) 인증,
-            Docker/Kubernetes 환경 대응까지 클라이언트와 서버 전반의 흐름을 이해하는 개발자로 성장했습니다. 또한 정육각
-            iOS 앱 선물하기 기능을 SwiftUI·TCA 기반으로 네이티브 재구현하며 웹과 모바일 양쪽 생태계를 함께 바라볼 수
-            있게 되었습니다.
+            7급 전산직 공무원이었지만, 더 역동적으로 성장할 수 있는 일을 찾고자 개발자의 길을 선택했습니다. <br />{" "}
+            비즈니스 목표와 사용자 경험이 만나는 최적의 지점을 고민하며 '이유 있는 코딩'을 지향합니다.
           </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-2 text-xs text-slate-400">
+            <span className="px-2 py-1 rounded bg-slate-800/40">#FrontendEngineer</span>
+            <span className="px-2 py-1 rounded bg-slate-800/40">#iOSDeveloper</span>
+            <span className="px-2 py-1 rounded bg-slate-800/40">#ReasonableCoding</span>
+            <span className="px-2 py-1 rounded bg-slate-800/40">#BusinessUXBalance</span>
+            <span className="px-2 py-1 rounded bg-slate-800/40">#SystemThinking</span>
+          </div>
         </section>
 
         {/* About */}
-        <section id="about" className="border-t border-slate-800 pt-8 pb-10">
+        <section id="about" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
           <h2 className="text-lg font-semibold">About</h2>
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
             저는 단순한 기능 구현보다{" "}
             <span className="font-medium text-slate-100">문제를 해결하고 흐름을 개선하는 일</span>에 더 큰 흥미를
-            느낍니다. 초록마을에서는 근태 관리 시스템(HERA)과 FC/이커머스 관리자 백오피스를 주도적으로 개발해 운영
-            효율을 높였고, 정육각에서는 커머스 웹과 선물하기 기능을 개선하며 안정적인 사용자 경험을 제공하는 데
-            집중했습니다.
+            느낍니다. 정육각에서는 커머스 웹과 앱 선물하기 기능을 담당했고, 정육각 개발팀 소속으로 근무하며 인수된
+            자회사 초록마을의 근태·백오피스·매장 관리 시스템까지 함께 개발했습니다.
           </p>
+
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-            React·Vue·SvelteKit 등 여러 프레임워크를 실무에서 사용해 본 경험이 있어, 기술 자체보다 문제에 적합한 도구를
-            선택하는 것을 중요하게 생각합니다. Azure AD(MSAL) 기반 인증, 권한 분기, Slack 알림, 반응형 UI 등 실제
-            현장에서 필요한 기능들을 안정적으로 구현해 왔으며, 공무원 시절 전산직 경험 덕분에 인프라와 행정 시스템 운영
-            관점도 함께 갖추고 있습니다.
+            React·Vue·SvelteKit 등 여러 프레임워크를 실무에서 사용해 본 경험이 있어, 기술보다 문제에 맞는 도구 선택을
+            우선합니다. Azure AD(MSAL) 기반 인증, 권한 분기, Slack 알림, 반응형 UI 등 실제 운영 환경 중심의 기능들을
+            집중적으로 경험했습니다.
           </p>
+
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-            iOS 사이드 프로젝트를 통해 SwiftUI·Combine·클린 아키텍처에도 익숙하며, 웹과 모바일 전반에 걸쳐 사용자 경험을
-            통합적으로 보는 개발자를 지향합니다.
+            또한 iOS 사이드 프로젝트와 정육각 앱 선물하기 기능의 SwiftUI·TCA 기반 재구현을 통해 모바일 생태계에 대한
+            이해도 함께 갖추고 있습니다.
           </p>
         </section>
 
         {/* Skills – 아이콘 기반 카드 UI */}
-        <section id="skills" className="border-t border-slate-800 pt-8 pb-10">
+        <section id="skills" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
           <h2 className="text-lg font-semibold">Skills</h2>
           <p className="mt-2 text-xs text-slate-400">자주 사용하는 기술들을 분야별로 정리했습니다.</p>
 
@@ -166,7 +172,7 @@ function App() {
         </section>
 
         {/* Experience */}
-        <section id="experience" className="border-t border-slate-800 pt-8 pb-10">
+        <section id="experience" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
           <h2 className="text-lg font-semibold">Experience</h2>
           <div className="mt-4 space-y-4 text-sm">
             {/* 정육각 */}
@@ -209,7 +215,7 @@ function App() {
         </section>
 
         {/* Projects */}
-        <section id="projects" className="border-t border-slate-800 pt-8 pb-10">
+        <section id="projects" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
           <h2 className="text-lg font-semibold">Projects</h2>
           <div className="mt-4 grid gap-4 text-sm md:grid-cols-2">
             {/* 1 정육각 커머스 웹 */}
@@ -310,7 +316,7 @@ function App() {
         </section>
 
         {/* Strengths */}
-        <section id="strengths" className="border-t border-slate-800 pt-8 pb-10">
+        <section id="strengths" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
           <h2 className="text-lg font-semibold">Strengths</h2>
           <ul className="mt-4 space-y-2 text-sm text-slate-300">
             <li>
@@ -327,7 +333,7 @@ function App() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="border-t border-slate-800 pt-8 pb-4">
+        <section id="contact" className="border-t border-slate-800 pt-8 pb-4 scroll-mt-10">
           <h2 className="text-lg font-semibold">Contact</h2>
           <p className="mt-3 text-sm text-slate-300">채용 관련 문의는 아래 연락처로 편하게 연락 주세요.</p>
           <div className="mt-3 text-sm">
