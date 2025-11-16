@@ -51,7 +51,11 @@ const About = () => (
         <FiTrendingUp className="h-7 w-7 text-sky-400 mx-auto" />
         <h3 className="mt-4 text-sm font-semibold text-slate-100">향후 방향</h3>
         <p className="mt-2 text-sm text-slate-300 leading-relaxed">
-          프론트엔드에서 백엔드까지 확장하는 풀스택 개발자로 성장
+          프론트엔드를 중심으로
+          <br />
+          서버·데이터 영역까지
+          <br />
+          이해 영역을 넓혀가는 개발자
         </p>
       </div>
     </div>

@@ -1,15 +1,17 @@
 import {
+  SiTypescript,
   SiReact,
-  SiSvelte,
+  SiNextdotjs,
   SiVuedotjs,
+  SiSvelte,
+  SiJavascript,
   SiNodedotjs,
   SiFirebase,
-  SiDocker,
+  SiMongodb,
   SiGithubactions,
   SiSwift,
   SiApple,
 } from "react-icons/si";
-import { AzureIcon } from "../assets/azureIcon";
 import { FiCode, FiServer, FiTool, FiSmartphone } from "react-icons/fi";
 
 const tagBaseClass = "px-2 py-1 rounded-md bg-slate-800/70 border border-slate-700/70 text-[11px] text-slate-200";
@@ -26,10 +28,15 @@ const Skills = () => (
           <h3 className="text-lg font-semibold flex items-center gap-2">
             <FiCode /> Frontend
           </h3>
-          <div className="flex gap-2 text-slate-500">
-            <SiReact className="text-2xl group-hover:text-sky-400 transition-colors" />
-            <SiVuedotjs className="text-2xl group-hover:text-emerald-400 transition-colors" />
-            <SiSvelte className="text-2xl group-hover:text-orange-400 transition-colors" />
+          <div className="flex gap-2">
+            <SiTypescript className="text-2xl text-[#3178C6]" />
+            <SiReact className="text-2xl text-[#61DAFB]" />
+            <div className="h-7 w-7 flex items-center justify-center rounded-md bg-white/10">
+              <SiNextdotjs className="text-white text-xl" />
+            </div>
+            <SiVuedotjs className="text-2xl text-[#4FC08D]" />
+            <SiSvelte className="text-2xl text-[#FF3E00]" />
+            <SiJavascript className="text-2xl text-[#F7DF1E]" />
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
@@ -50,13 +57,14 @@ const Skills = () => (
             Backend & Infra
           </h3>
           <div className="flex gap-2 text-slate-500">
-            <SiNodedotjs className="text-2xl group-hover:text-emerald-400 transition-colors" />
-            <SiFirebase className="text-2xl group-hover:text-amber-400 transition-colors" />
-            <SiDocker className="text-2xl group-hover:text-sky-400 transition-colors" />
+            <SiNodedotjs className="text-2xl text-[#5FA04E]" />
+            <SiFirebase className="text-2xl text-[#DD2C00]" />
+            <SiMongodb className="text-2xl text-[#47A248]" />
+            <img className="h-6 w-6" src="/assets/cosmosdb.svg" alt="Azure" />
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
-          {["Node.js", "Firebase", "PostgreSQL", "MongoDB", "CosmosDB", "Docker", "Kubernetes", "Azure"].map(
+          {["Node.js", "Firebase", "MongoDB", "CosmosDB", "PostgreSQL(Prisma 기반)", "Kubernetes(운영 환경 이해)"].map(
             (skill) => (
               <li key={skill} className={tagBaseClass}>
                 {skill}
@@ -74,12 +82,12 @@ const Skills = () => (
             Platform & Tooling
           </h3>
           <div className="flex gap-2 text-slate-500">
-            <AzureIcon className="h-6 w-6" />
-            <SiGithubactions className="h-6 w-6 text-slate-500 group-hover:text-sky-400 transition-colors" />
+            <img className="h-6 w-6" src="/assets/azure.svg" alt="Azure" />
+            <SiGithubactions className="h-6 w-6 text-[#2088FF]" />
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
-          {["MSAL", "Sentry", "GitHub Actions", "Slack Webhook", "Figma"].map((skill) => (
+          {["MSAL", "GitHub Actions", "Sentry", "Slack Webhook", "Figma"].map((skill) => (
             <li key={skill} className={tagBaseClass}>
               {skill}
             </li>
@@ -95,8 +103,8 @@ const Skills = () => (
             iOS & Mobile
           </h3>
           <div className="flex gap-2 text-slate-500">
-            <SiSwift className="text-2xl group-hover:text-orange-400 transition-colors" />
-            <SiApple className="text-2xl group-hover:text-slate-100 transition-colors" />
+            <SiSwift className="text-2xl text-[#F05138]" />
+            <SiApple className="text-2xl text-white" />
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
