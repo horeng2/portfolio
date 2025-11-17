@@ -4,7 +4,6 @@ import {
   SiNextdotjs,
   SiVuedotjs,
   SiSvelte,
-  SiJavascript,
   SiNodedotjs,
   SiFirebase,
   SiMongodb,
@@ -36,11 +35,10 @@ const Skills = () => (
             </div>
             <SiVuedotjs className="text-2xl text-[#4FC08D]" />
             <SiSvelte className="text-2xl text-[#FF3E00]" />
-            <SiJavascript className="text-2xl text-[#F7DF1E]" />
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
-          {["TS", "React", "Next.js", "Vue", "SvelteKit", "JS"].map((skill) => (
+          {["TS", "React", "Next.js", "Vue", "SvelteKit"].map((skill) => (
             <li key={skill} className={tagBaseClass}>
               {skill}
             </li>
@@ -108,7 +106,7 @@ const Skills = () => (
           </div>
         </div>
         <ul className="mt-3 flex flex-wrap gap-2">
-          {["Swift", "SwiftUI", "UIKit", "TCA", "MVVM", "CoreData", "Keychain"].map((skill) => (
+          {["Swift", "SwiftUI", "TCA", "MVVM", "CoreData", "Keychain"].map((skill) => (
             <li key={skill} className={tagBaseClass}>
               {skill}
             </li>

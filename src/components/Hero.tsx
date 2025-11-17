@@ -1,7 +1,7 @@
 const Hero = () => (
-  <section id="hero" className="pt-12 pb-16">
+  <section id="hero" className="pt-12 pb-16 scroll-mt-24">
     <p className="text-sm uppercase tracking-[0.2em] bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
-      Web Frontend & iOS Developer
+      Web Frontend Developer
     </p>
 
     <h1 className="mt-3 text-4xl font-semibold leading-tight">

@@ -40,7 +40,7 @@ const About = () => (
         <p className="mt-2 text-sm text-slate-300 leading-relaxed">
           SwiftUI·TCA 기반
           <br />
-          iOS 개발 경험을 통한
+          iOS 개발 실무 경험을 통한
           <br />
           모바일 생태계 이해
         </p>
