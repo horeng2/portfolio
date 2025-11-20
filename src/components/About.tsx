@@ -7,7 +7,7 @@ const About = () => (
     <p className="text-base text-slate-300 leading-relaxed max-w-3xl mx-auto">
       iOS로 시작해 웹 프론트엔드까지 영역을 넓혀 왔습니다.
       <br />
-      필요한 기술을 상황에 맞게 선택하고 빠르게 구현하는 데 강점을 지니며,
+      필요한 기술을 상황에 맞게 선택하고 빠르게 적용하는 데 강점을 지니며,
       <br />
       사용자 경험을 고려해 필요한 기능을 정확하게 구현합니다.
     </p>
@@ -53,9 +53,9 @@ const About = () => (
         <p className="mt-2 text-sm text-slate-300 leading-relaxed">
           프론트엔드를 중심으로
           <br />
-          서버·데이터 영역까지
+          서비스 흐름과 도메인까지
           <br />
-          이해 영역을 넓혀가는 개발자
+          깊게 이해하는 개발자
         </p>
       </div>
     </div>
