@@ -1,7 +1,7 @@
 const Contact = () => (
   <section id="contact" className="border-t border-slate-800 pt-8 pb-4 scroll-mt-10">
     <h2 className="text-lg font-semibold">Contact</h2>
-    <p className="mt-3 text-sm text-slate-300">채용 관련 문의는 아래 연락처로 편하게 연락 주세요.</p>
+    <p className="mt-3 text-sm text-slate-300">문의는 아래로 편하게 연락 주세요.</p>
     <div className="mt-3 text-sm">
       <p className="text-slate-200">
         Email{" "}
