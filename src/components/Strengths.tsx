@@ -25,7 +25,7 @@ const strengths = [
     title: "일하는 방식",
     points: [
       "타 직군과 매끄럽게 소통하며 ‘일이 잘 돌아가는 상태’를 중시",
-      "단독 프로젝트 경험 -> 끝까지 책임지고 마무리하는 태도",
+      "단독 프로젝트 경험 → 끝까지 책임지고 마무리하는 태도",
       "새로운 기술을 빠르게 익히고 실제 서비스에 적용하는 학습 속도",
     ],
   },
@@ -33,21 +33,24 @@ const strengths = [
 
 const Strengths = () => {
   return (
-    <section id="strengths" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
+    <section id="strengths" className="border-t border-slate-800 pt-10 pb-12 scroll-mt-10">
       <h2 className="text-xl font-semibold text-left sm:text-center">Strengths</h2>
-      <p className="mt-2 text-sm text-slate-400 text-left sm:text-center">세 가지 축의 강점입니다.</p>
+      <p className="mt-2 text-sm sm:text-[15px] text-slate-400 leading-relaxed text-left sm:text-center">
+        세 가지 분야의 강점입니다.
+      </p>
 
-      <div className="mx-auto mt-6 grid max-w-5xl gap-4 px-4 md:grid-cols-3">
+      <div className="mx-auto mt-6 grid max-w-5xl gap-5 px-4 md:grid-cols-3">
         {strengths.map((item) => (
           <article
             key={item.id}
-            className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs sm:text-[13px] shadow-sm"
+            className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-sm text-left"
           >
             <header className="flex items-center gap-2">
-              <span className="text-lg">{item.icon}</span>
-              <h3 className="font-semibold text-slate-50">{item.title}</h3>
+              <span className="text-xl">{item.icon}</span>
+              <h3 className="font-semibold text-slate-50 text-sm sm:text-base">{item.title}</h3>
             </header>
-            <ul className="mt-3 space-y-1.5 text-left leading-relaxed text-slate-200 pl-4">
+
+            <ul className="mt-3 pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-200">
               {item.points.map((line) => (
                 <li key={line} className="list-disc">
                   {line}

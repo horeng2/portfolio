@@ -11,20 +11,23 @@ const heroVariants = {
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative flex min-h-[70vh] items-center justify-center overflow-hidden px-4">
+    <section
+      id="hero"
+      className="relative flex min-h-[70vh] items-center justify-center overflow-hidden px-4 pt-10 pb-12"
+    >
       {/* 배경 블롭 */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -left-32 top-10 h-64 w-64 rounded-full bg-sky-500/20 blur-3xl animate-[spin_40s_linear_infinite]" />
         <div className="absolute -right-32 bottom-0 h-72 w-72 rounded-full bg-purple-500/15 blur-3xl animate-[spin_50s_linear_infinite]" />
       </div>
 
-      <div className="mx-auto flex max-w-3xl flex-col gap-3 text-center">
+      <div className="mx-auto flex max-w-3xl flex-col gap-4 text-center">
         <motion.p
           custom={0}
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="text-xs font-medium tracking-[0.25em] text-sky-400"
+          className="text-xs font-medium tracking-[0.2em] text-sky-400"
         >
           FRONTEND DEVELOPER
         </motion.p>
@@ -48,7 +51,7 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-1 text-base text-slate-300 leading-relaxed"
+          className="mt-3 text-sm text-slate-300 leading-relaxed sm:text-base"
         >
           커머스와 운영 시스템을 중심으로 웹·모바일 프론트엔드를 경험해 왔고,
           <br />
@@ -60,7 +63,7 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-3 flex justify-center gap-3 text-sm"
+          className="mt-4 flex justify-center gap-3 text-sm"
         >
           <a href="#projects" className="rounded-full bg-sky-500 px-4 py-2 font-medium text-slate-950 hover:bg-sky-400">
             Projects 보기
@@ -78,7 +81,7 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-8 flex justify-center text-sm text-slate-400"
+          className="mt-10 flex justify-center text-xs text-slate-400 sm:text-sm"
         >
           <span className="flex items-center gap-2">
             <span className="animate-bounce">↓</span>

@@ -57,7 +57,7 @@ const projects: Project[] = [
   {
     id: "chogreen-admins",
     title: "초록마을 운영 백오피스",
-    subtitle: "가맹점 홍보 관리 백오피스 · 이커머스 관리 백오피스 · 매장 운영 백오피스",
+    subtitle: "가맹점 홍보 관리 · 이커머스 관리 · 매장 운영 백오피스",
     tech: "React · Redux Toolkit · Vite · MUI · Tailwind · MSAL · Turborepo · Docker/K8s · Node.js · CosmosDB",
     summary: [
       "프랜차이즈·이커머스·매장 운영 등 전사 운영 시스템 다수 개발",
@@ -94,13 +94,14 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
+    <section id="projects" className="border-t border-slate-800 pt-10 pb-12 scroll-mt-10">
       <h2 className="text-xl font-semibold text-left sm:text-center">Projects</h2>
 
-      <p className="mt-2 text-sm text-slate-400 text-left sm:text-center">
-        서비스 환경 에서 운영했던 프로젝트들입니다.
+      <p className="mt-2 text-sm sm:text-[15px] text-slate-400 leading-relaxed text-left sm:text-center">
+        실제 서비스 환경에서 운영했던 프로젝트들입니다.
       </p>
-      <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-4 px-4">
+
+      <div className="mx-auto mt-6 flex max-w-[734px] flex-col gap-4 px-4">
         {projects.map((project) => {
           const isOpen = openId === project.id;
 
@@ -110,31 +111,41 @@ const Projects = () => {
               className="relative rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm shadow-sm transition-colors hover:border-sky-500/70"
             >
               <button
+                type="button"
                 onClick={() => toggle(project.id)}
+                aria-expanded={isOpen}
                 className="absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full border border-sky-500 bg-slate-900/80 text-[11px] text-slate-200 hover:border-sky-500 hover:text-sky-300"
               >
                 <span className={`transition-transform duration-200 ${isOpen ? "rotate-90" : ""}`}>▶</span>
               </button>
-              <header className="text-center">
-                <h3 className="text-base font-semibold text-slate-50">{project.title}</h3>
-                {project.subtitle && <p className="mt-0.5 text-[12px] text-slate-300">{project.subtitle}</p>}
+
+              <header className="text-left">
+                <h3 className="text-base text-left font-semibold text-slate-50">{project.title}</h3>
+                {project.subtitle && (
+                  <p className="mt-0.5 text-[12px] text-slate-300 leading-relaxed">{project.subtitle}</p>
+                )}
                 <p className="mt-1 text-[12px] text-slate-400">{project.tech}</p>
               </header>
-              <ul className="mx-auto mt-3 max-w-[400px] list-disc space-y-1.5 pl-4 text-slate-200">
+
+              {/* 요약 */}
+              <ul className="mx-auto mt-3 list-disc space-y-1.5 pl-5 text-[13px] leading-relaxed text-slate-200 sm:text-[14px] text-left">
                 {project.summary.map((line) => (
                   <li key={line}>{line}</li>
                 ))}
               </ul>
+
+              {/* 상세 (접기/펼치기) */}
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  isOpen ? "max-h-[600px] opacity-100 mt-1.5" : "max-h-0 opacity-0"
+                  isOpen ? "max-h-[600px] opacity-100 mt-2" : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="mx-auto max-w-[400px] list-disc space-y-1.5 pl-4 text-[13px] leading-relaxed text-slate-200">
+                <ul className="mx-auto list-disc space-y-1.5 pl-5 text-[13px] leading-relaxed text-slate-200 sm:text-[14px] text-left">
                   {project.details.map((line) => (
                     <li key={line}>{line}</li>
                   ))}
                 </ul>
+
                 {project.linkUrl && (
                   <a
                     href={project.linkUrl}
