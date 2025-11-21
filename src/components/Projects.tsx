@@ -44,10 +44,14 @@ const projects: Project[] = [
   {
     id: "dawn-delivery",
     title: "초록마을 새벽배송 관리자 시스템",
-    subtitle: "새벽 배송 실시간 운영 관리 (단독 개발)",
+    subtitle: "새벽 배송 실시간 운영 관리 (단독 설계·개발)",
     tech: "Node.js · Express · Handlebars · CosmosDB/MongoDB · Azure AD",
-    summary: ["주문·배송·가맹점·통계 실시간 운영 데이터 조회·관리", "Azure AD·Slack 연동으로 운영 효율 개선"],
+    summary: [
+      "주문·배송·가맹점·통계 실시간 운영 데이터 조회·관리",
+      "CosmosDB/MongoDB 직접 연결해 데이터 모델 설계·가공",
+    ],
     details: [
+      "Azure AD·Slack 연동으로 운영 효율 개선",
       "주문·배송·가맹점·통계 실시간 조회 및 관리 기능 개발",
       "상품 발주·입고·우편번호 제한 등 운영 도메인 로직 구현",
       "CosmosDB/MongoDB 직접 연결해 데이터 모델 설계·가공",

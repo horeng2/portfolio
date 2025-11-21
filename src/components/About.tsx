@@ -5,7 +5,7 @@ const About = () => (
     <h2 className="text-xl font-semibold text-sky-400 text-center">About</h2>
 
     <p className="mt-5 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl mx-auto text-center">
-      iOS로 시작해 웹 프론트엔드까지 확장해 왔습니다.
+      커머스와 운영 시스템을 중심으로 웹 프론트엔드와 iOS를 경험했습니다.
       <br className="hidden sm:block" />
       필요한 기술을 상황에 맞게 빠르게 익히고 적용하며,
       <br className="hidden sm:block" />

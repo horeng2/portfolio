@@ -51,11 +51,13 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-3 text-sm text-slate-300 leading-relaxed sm:text-base"
+          className="mt-3 text-base text-slate-300 leading-relaxed"
         >
-          커머스와 운영 시스템을 중심으로 웹·모바일 프론트엔드를 경험해 왔고,
+          7급 전산직 공무원이었지만 더 즐겁고 역동적인 일을 하고 싶었습니다.
           <br />
-          실제 서비스에서 필요한 기능을 안정적으로 구현하는 데 강점을 갖고 있습니다.
+          흥미를 느끼는 일로 조직과 함께 성장할 수 있는 길을 고민해왔고,
+          <br />
+          5년 간 몸담은 공직을 떠나 개발자로 새로운 여정을 시작했습니다.
         </motion.p>
 
         <motion.div
