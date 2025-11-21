@@ -4,7 +4,7 @@ const About = () => (
   <section id="about" className="border-t border-slate-800 pt-8 pb-10 scroll-mt-10">
     <h2 className="text-xl font-semibold text-sky-400 text-center">About</h2>
 
-    <p className="text-base text-slate-300 leading-relaxed max-w-3xl mx-auto">
+    <p className="mt-4 text-base text-slate-300 leading-relaxed max-w-3xl mx-auto">
       iOS로 시작해 웹 프론트엔드까지 영역을 넓혀 왔습니다.
       <br />
       필요한 기술을 상황에 맞게 선택하고 빠르게 적용하는 데 강점을 지니며,
@@ -12,7 +12,7 @@ const About = () => (
       사용자 경험을 고려해 필요한 기능을 정확하게 구현합니다.
     </p>
 
-    <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+    <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
       {/* 카드 1 */}
       <div className="rounded-2xl bg-slate-900/40 p-6 text-center border border-slate-800">
         <FiLayers className="h-7 w-7 text-sky-400 mx-auto" />

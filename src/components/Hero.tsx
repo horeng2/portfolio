@@ -26,7 +26,7 @@ const Hero = () => {
           animate="visible"
           className="text-xs font-medium tracking-[0.25em] text-sky-400"
         >
-          WEB FRONTEND & iOS
+          FRONTEND DEVELOPER
         </motion.p>
 
         <motion.h1
@@ -48,9 +48,9 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-1 text-sm text-slate-300 leading-relaxed"
+          className="mt-1 text-base text-slate-300 leading-relaxed"
         >
-          커머스와 운영 시스템을 중심으로 웹 프론트엔드와 iOS를 경험해 왔고,
+          커머스와 운영 시스템을 중심으로 웹·모바일 프론트엔드를 경험해 왔고,
           <br />
           실제 서비스에서 필요한 기능을 안정적으로 구현하는 데 강점을 갖고 있습니다.
         </motion.p>
@@ -78,7 +78,7 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-8 flex justify-center text-[11px] text-slate-400"
+          className="mt-8 flex justify-center text-sm text-slate-400"
         >
           <span className="flex items-center gap-2">
             <span className="animate-bounce">↓</span>
