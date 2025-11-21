@@ -1,5 +1,5 @@
 const Contact = () => (
-  <section id="contact" className="border-t border-slate-800 pt-8 pb-4 scroll-mt-10">
+  <section id="contact" className="border-t border-slate-800 pt-8 scroll-mt-10">
     <h2 className="text-lg font-semibold">Contact</h2>
     <p className="mt-3 text-sm text-slate-300">문의는 아래로 편하게 연락 주세요.</p>
     <div className="mt-3 text-sm">
@@ -9,7 +9,6 @@ const Contact = () => (
           huski.a.a@gmail.com
         </a>
       </p>
-      <p className="mt-1 text-slate-200">Phone 010-5189-1992</p>
     </div>
   </section>
 );
