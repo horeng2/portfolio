@@ -17,8 +17,8 @@ const tagBaseClass = "px-2 py-1 rounded-md bg-slate-800/70 border border-slate-7
 
 const Skills = () => (
   <section id="skills" className="border-t border-slate-800 pt-10 pb-12 scroll-mt-10">
-    <h2 className="text-xl font-semibold text-left sm:text-center">Skills</h2>
-    <p className="mt-2 text-sm sm:text-[15px] text-slate-400 leading-relaxed text-left sm:text-center">
+    <h2 className="text-lg sm:text-xl font-semibold text-center">Skills</h2>
+    <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed text-center">
       프로젝트에서 사용해 온 기술들을 분야별로 정리했습니다.
     </p>
 

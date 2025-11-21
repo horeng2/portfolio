@@ -99,9 +99,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="border-t border-slate-800 pt-10 pb-12 scroll-mt-10">
-      <h2 className="text-xl font-semibold text-left sm:text-center">Projects</h2>
+      <h2 className="text-lg sm:text-xl font-semibold text-center">Projects</h2>
 
-      <p className="mt-2 text-sm sm:text-[15px] text-slate-400 leading-relaxed text-left sm:text-center">
+      <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed text-center">
         실제 서비스 환경에서 운영했던 프로젝트들입니다.
       </p>
 
@@ -120,19 +120,19 @@ const Projects = () => {
                 aria-expanded={isOpen}
                 className="absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full border border-sky-500 bg-slate-900/80 text-[11px] text-slate-200 hover:border-sky-500 hover:text-sky-300"
               >
-                <span className={`transition-transform duration-200 ${isOpen ? "rotate-90" : ""}`}>▶</span>
+                <span className={`transition-transform duration-200 ${isOpen ? "-rotate-180" : ""}`}>▼</span>
               </button>
 
               <header className="text-left">
-                <h3 className="text-base text-left font-semibold text-slate-50">{project.title}</h3>
+                <h3 className="text-sm sm:text-base text-left font-semibold text-slate-50">{project.title}</h3>
                 {project.subtitle && (
-                  <p className="mt-0.5 text-[12px] text-slate-300 leading-relaxed">{project.subtitle}</p>
+                  <p className="mt-0.5 text-xs sm:text-sm text-slate-300 leading-relaxed">{project.subtitle}</p>
                 )}
-                <p className="mt-1 text-[12px] text-slate-400">{project.tech}</p>
+                <p className="mt-1 text-xs  text-slate-400">{project.tech}</p>
               </header>
 
               {/* 요약 */}
-              <ul className="mx-auto mt-3 list-disc space-y-1.5 pl-5 text-[13px] leading-relaxed text-slate-200 sm:text-[14px] text-left">
+              <ul className="mx-auto mt-3 list-disc space-y-1.5 pl-5 text-xs sm:text-sm leading-relaxed text-slate-200 sm:text-[14px] text-left">
                 {project.summary.map((line) => (
                   <li key={line}>{line}</li>
                 ))}
@@ -144,7 +144,7 @@ const Projects = () => {
                   isOpen ? "max-h-[600px] opacity-100 mt-2" : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="mx-auto list-disc space-y-1.5 pl-5 text-[13px] leading-relaxed text-slate-200 sm:text-[14px] text-left">
+                <ul className="mx-auto list-disc space-y-1.5 pl-5 text-xs sm:text-sm leading-relaxed text-slate-200 sm:text-base text-left">
                   {project.details.map((line) => (
                     <li key={line}>{line}</li>
                   ))}
@@ -155,7 +155,7 @@ const Projects = () => {
                     href={project.linkUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-3 block text-center text-[12px] text-sky-400 hover:underline"
+                    className="mt-3 block text-center text-xs text-sky-400 hover:underline"
                   >
                     {project.linkLabel ?? "더 보기"}
                   </a>

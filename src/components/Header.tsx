@@ -1,5 +1,5 @@
 const Header = () => (
-  <header className="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+  <header className="hidden sm:block sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
     <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
       <a href="#hero" className="text-base font-semibold tracking-tight hover:text-sky-400">
         Kim Seonyeong

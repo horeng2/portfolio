@@ -8,12 +8,13 @@ import Projects from "./components/Projects";
 import Strengths from "./components/Strengths";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
       <Header />
-      <main className="mx-auto max-w-5xl px-4 pb-0">
+      <main className="mx-auto max-w-5xl px-4 pb-0 ">
         <Hero />
         <About />
         <Skills />
@@ -22,6 +23,7 @@ function App() {
         <Strengths />
         <Contact />
         <Footer />
+        <BackToTop />
       </main>
     </div>
   );

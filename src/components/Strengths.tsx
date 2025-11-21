@@ -34,10 +34,8 @@ const strengths = [
 const Strengths = () => {
   return (
     <section id="strengths" className="border-t border-slate-800 pt-10 pb-12 scroll-mt-10">
-      <h2 className="text-xl font-semibold text-left sm:text-center">Strengths</h2>
-      <p className="mt-2 text-sm sm:text-[15px] text-slate-400 leading-relaxed text-left sm:text-center">
-        세 가지 분야의 강점입니다.
-      </p>
+      <h2 className="text-lg sm:text-xl font-semibold text-center">Strengths</h2>
+      <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed ext-center">세 가지 분야의 강점입니다.</p>
 
       <div className="mx-auto mt-6 grid max-w-5xl gap-5 px-4 md:grid-cols-3">
         {strengths.map((item) => (
@@ -47,10 +45,10 @@ const Strengths = () => {
           >
             <header className="flex items-center gap-2">
               <span className="text-xl">{item.icon}</span>
-              <h3 className="font-semibold text-slate-50 text-sm sm:text-base">{item.title}</h3>
+              <h3 className="font-semibold text-slate-50 text-sm">{item.title}</h3>
             </header>
 
-            <ul className="mt-3 pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-200">
+            <ul className="mt-3 pl-5 space-y-1.5 text-xs sm:text-sm leading-relaxed text-slate-200">
               {item.points.map((line) => (
                 <li key={line} className="list-disc">
                   {line}

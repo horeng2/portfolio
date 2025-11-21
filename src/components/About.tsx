@@ -2,14 +2,14 @@ import { FiLayers, FiGrid, FiSmartphone, FiTrendingUp } from "react-icons/fi";
 
 const About = () => (
   <section id="about" className="border-t border-slate-800 pt-12 pb-14 scroll-mt-10">
-    <h2 className="text-xl font-semibold text-sky-400 text-center">About</h2>
+    <h2 className="text-lg sm:text-xl font-semibold text-sky-400 text-center">About</h2>
 
     <p className="mt-5 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl mx-auto text-center">
-      커머스와 운영 시스템을 중심으로 웹 프론트엔드와 iOS를 경험했습니다.
-      <br className="hidden sm:block" />
+      커머스와 운영 시스템을 중심으로 <br className="sm:hidden" />웹 프론트엔드와 iOS를 경험했습니다. <br />
       필요한 기술을 상황에 맞게 빠르게 익히고 적용하며,
-      <br className="hidden sm:block" />
-      사용자 경험을 해치지 않는 선에서 필요한 기능을 안정적으로 구현합니다.
+      <br />
+      사용자 경험을 해치지 않는 선에서 <br className="sm:hidden" />
+      필요한 기능을 안정적으로 구현합니다.
     </p>
 
     <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto px-4">

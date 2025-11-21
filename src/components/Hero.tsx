@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[70vh] items-center justify-center overflow-hidden px-4 pt-10 pb-12"
+      className="relative flex min-h-[60vh] sm:min-h-[70vh] items-center justify-center overflow-hidden px-4 pt-10 pb-12"
     >
       {/* 배경 블롭 */}
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -37,12 +37,10 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="text-3xl font-semibold leading-snug sm:text-4xl"
+          className="text-2xl sm:text-3xl font-semibold leading-snug"
         >
-          새로움을 빠르게 흡수하는{" "}
-          <span className="text-transparent bg-gradient-to-r from-sky-400 to-fuchsia-400 bg-clip-text">
-            개발자 김선영
-          </span>
+          새로움을 빠르게 흡수하는 개발자 <br className="sm:hidden" />
+          <span className="text-transparent bg-gradient-to-r from-sky-400 to-fuchsia-400 bg-clip-text">김선영</span>
           입니다.
         </motion.h1>
 
@@ -51,9 +49,9 @@ const Hero = () => {
           variants={heroVariants}
           initial="hidden"
           animate="visible"
-          className="mt-3 text-base text-slate-300 leading-relaxed"
+          className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed"
         >
-          7급 전산직 공무원이었지만 더 즐겁고 역동적인 일을 하고 싶었습니다.
+          7급 전산직 공무원이었지만 <br className="sm:hidden" />더 즐겁고 역동적인 일을 하고 싶었습니다.
           <br />
           흥미를 느끼는 일로 조직과 함께 성장할 수 있는 길을 고민해왔고,
           <br />
